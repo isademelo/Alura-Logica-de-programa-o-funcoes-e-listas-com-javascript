@@ -7,3 +7,5 @@
  * Desenvolver e aplicar funções para resolver problemas.
  * Praticar a decomposição de tarefas em passos lógicos e reutilizáveis.
  * Aprender boas práticas de organização de código.
+
+#Desafios
