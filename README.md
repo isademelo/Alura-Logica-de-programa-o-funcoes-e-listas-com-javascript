@@ -8,7 +8,7 @@
  * Praticar a decomposição de tarefas em passos lógicos e reutilizáveis.
  * Aprender boas práticas de organização de código.
 
-- DESAFIO 1 -
+DESAFIOS
 
 **2. Altere o conteúdo da tag h1 com document.querySelector e atribua o seguinte texto: Hora do Desafio.**
 
