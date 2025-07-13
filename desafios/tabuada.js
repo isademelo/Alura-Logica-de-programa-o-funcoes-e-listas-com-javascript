@@ -1,3 +1,5 @@
+//Crie uma função que mostre na tela a tabuada de um número dado como parâmetro.
+
 let multiplicador = parseInt(prompt("Digite um número e traremos toda a tabuada dele de 1 a 10."));
 let multiplicando = 0;
 
