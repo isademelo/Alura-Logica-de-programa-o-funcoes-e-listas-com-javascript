@@ -1,3 +1,5 @@
+//Crie uma função que calcule o valor do fatorial de um número passado como parâmetro.
+
 let numero = parseInt(prompt("Digite um número para que possamos calcular o fatorial"));
 
 let fatorial = numero;
