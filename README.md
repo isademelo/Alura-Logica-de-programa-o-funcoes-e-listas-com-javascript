@@ -124,3 +124,102 @@ function potenciacao (numero){
 
 potenciacao(numero)
 ```
+
+13. Crie uma função que calcule o índice de massa corporal (IMC) de uma pessoa, a partir de sua altura, em metros, e peso, em quilogramas, que serão recebidos como parâmetro.
+
+```ruby
+const altura = parseFloat(prompt("Digite sua altura em metros.\nEX: 1.58, 1.70, 1.80"));
+const peso = parseFloat(prompt("Digite seu peso em KG."))
+console.log(altura)
+console.log(peso)
+
+function calculoIMC(altura, peso){
+    let imc =  peso /(altura * altura)
+    imc= parseFloat(imc.toFixed(2));
+    if (imc < 18.5){
+        alert(`O seu IMC é = a ${imc} e você está abaixo do peso`);
+    } else if ((imc >= 18.5) && (imc < 24.9)){
+        alert(`O seu IMC é = a ${imc} e você está com peso normal`);
+    } else if ((imc >= 25 ) && (imc < 29.9)){
+        alert(`O seu IMC é = a ${imc} e você está com sobre peso`);
+    } else {
+        alert(`O seu IMC é = a ${imc} e você está Obeso`);
+    }
+}
+calculoIMC(altura, peso);
+```
+
+14. Crie uma função que calcule o valor do fatorial de um número passado como parâmetro.
+
+```ruby
+let numero = parseInt(prompt("Digite um número para calcular o fatorial:"));
+
+function calcularFatorialDeUmNumero(numero){
+    let fatorial = 1;
+    let contador = numero;
+    while (contador >= 1){
+        fatorial *= contador;
+        contador--;
+    }
+    console.log(`O fatorial de ${numero} é ${fatorial}`);
+}
+calcularFatorialDeUmNumero(numero);
+```
+
+15. Crie uma função que converte um valor em dólar, passado como parâmetro, e retorna o valor equivalente em reais. Para isso, considere a cotação do dólar igual a R$4,80.
+
+```ruby
+let valorEmDolar = parseFloat(prompt("Digite um valor em dólar para realizar a conversão para o real brasileiro"));
+const dolar = 4.8;
+
+function converterDolarEmReais(valorEmDolar){
+    let conversao = valorEmDolar * dolar;
+    conversao = conversao.toFixed(2); 
+    console.log(`a conversão de U$${valorEmDolar} é: R$${conversao}`);
+}
+converterDolarEmReais(valorEmDolar);
+```
+
+16. Crie uma função que mostre na tela a área e o perímetro de uma sala retangular, utilizando altura e largura que serão dadas como parâmetro.
+
+```ruby
+let lado1 = parseFloat(prompt("Digite o tamanho de um dos lados em metro."));
+let lado2 = parseFloat(prompt("Digite o tamanho so segundo lado em metro."));
+let area, perimetro;
+function calcularAreaEPerimetro(lado1, lado2){
+    area = lado1 * lado2;
+    perimetro = (lado1 * 2) + (lado2*2);
+    alert(`O calculo da área da sala é: ${area}m²\nO calculo do perímetro da sala é ${perimetro}m`);
+}
+calcularAreaEPerimetro(lado1, lado2);
+```
+
+17. Crie uma função que mostre na tela a área e o perímetro de uma sala circular, utilizando seu raio que será fornecido como parâmetro. Considere Pi = 3,14.
+
+``` ruby
+let valorDoRaio = parseFloat(prompt("Digite o tamanho do raio da sala em metro."));
+const pi = 3.14;
+function calcularAreaEPerimetroDoCirculo(valorDoRaio){
+    let areaCirculo = pi * (valorDoRaio * valorDoRaio); 
+    let perimetroCirculo = 2 * pi * valorDoRaio; 
+    areaCirculo = areaCirculo.toFixed(2);
+    perimetroCirculo = perimetroCirculo.toFixed(2);
+    alert(`A área da sala circular é ${areaCirculo}m².\nO perímetro da sala é ${perimetroCirculo}m`);
+}
+calcularAreaEPerimetroDoCirculo(valorDoRaio);
+```
+
+18. Crie uma função que mostre na tela a tabuada de um número dado como parâmetro.
+
+```ruby
+let multiplicador = parseInt(prompt("Digite um número e traremos toda a tabuada dele de 1 a 10."));
+let multiplicando = 0;
+    function tabuadaDosGuri(multiplicador){
+        while (multiplicando < 10){
+        multiplicando ++;   
+        let tabuada = multiplicador * multiplicando;
+        console.log(`A multiplicação entre ${multiplicador} e ${multiplicando} é ${tabuada}`);
+    }
+}
+tabuadaDosGuri(multiplicador);
+```
