@@ -10,6 +10,8 @@
 
 DESAFIOS
 
+CONTEÚDO DE FUNÇÕES 
+
 **2. Altere o conteúdo da tag h1 com document.querySelector e atribua o seguinte texto: Hora do Desafio.**
 
 ```ruby
@@ -222,4 +224,45 @@ let multiplicando = 0;
     }
 }
 tabuadaDosGuri(multiplicador);
+```
+
+CONTEÚDO DE ARRAYS 
+
+19. Crie uma lista vazia, com o nome listaGenerica.
+    
+```ruby
+const listaGenerica = []; 
+```
+
+20. Crie uma lista de linguagens de programação chamada linguagensDeProgramacao com os seguintes elementos: 'JavaScript','C','C++', 'Kotlin' e 'Python'.
+    
+```ruby
+const linguagensDeProgramacao = ["JavaScript", "C", "C++", "Kotlin", "Python"];
+```
+
+21. Adicione à lista linguagensDeProgramacao os seguintes elementos: 'Java', 'Ruby' e 'GoLang'.
+    
+``` ruby
+linguagensDeProgramacao.push("Java", "Ruby", "GoLang");
+```
+
+22. Crie uma lista com 3 nomes e exiba no console apenas o primeiro elemento.
+
+```ruby
+const nomes1 = ["Isack", "Juliana", "Jorge"];
+console.log(nomes1[1]);
+```
+
+23. Crie uma lista com 3 nomes e exiba no console apenas o segundo elemento.
+
+```ruby
+const nomes2 = ["Isack", "Juliana", "Jorge"];
+console.log(nomes2[2]);
+```
+
+23. Crie uma lista com 3 nomes e exiba no console apenas o último elemento.
+
+```ruby
+const nomes3 = ["Isack", "Juliana", "Jorge"];
+console.log(nomes3[3]);
 ```
